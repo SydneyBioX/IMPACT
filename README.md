@@ -10,7 +10,7 @@ We find that our model delivers improved predictive accuracy performance across 
 
 ## Table of Contents
 
-* [Installation](##Installation)
+* [Installation](#Installation)
 * [Usage](#Usage)
 * [Citation](#Citation)
 
@@ -27,13 +27,14 @@ conda activate <env>
 After entering an entire new virtue environment, the recommended way to install our package is:
 
 ~~~shell
-pip install IMPACTBIOINFORMATICS==4.6
+pip install IMPACTBIOINFORMATICS
 ~~~
+This commend would automatically download and install the lastest version (should be after 4.7) onto your local device.
 
 Another alternative way to install the package is using the .tar file provided in this repo by:
 
 ~~~shell
-pip install IMPACTBIOINFORMATICS-4.6.tar.gz
+pip install IMPACTBIOINFORMATICS-X.X.tar.gz
 ~~~
 
 After this, validate the installation success in python by:
@@ -41,4 +42,22 @@ After this, validate the installation success in python by:
 ~~~shell
 import impact
 print(impact.__version__)
+~~~
+
+## Usage
+
+
+
+
+## Citation
+
+If you find our codes useful, please consider citing our work:
+
+~~~bibtex
+@article{IMPACT,
+  title={IMPACT: Interpretable Microbial Phenotype Analysis via microbial Characteristic Traits},
+  author={},
+  journal={},
+  year={2024},
+}
 ~~~
