@@ -41,12 +41,36 @@ After this, validate the installation success in python by:
 
 ~~~shell
 import impact
-print(impact.__version__)
 ~~~
+If no error occurs, then IMPACT has been sucessfully installed.
 
 ## Usage
 
+There are two main functions implemented within IMPACT, "train()" and "predict()".
 
+Function train(input_file, metabolites_file, isize, check_feature_importance) could help user to train a Phenotype Prediction Model and analysis the data via microbial characteristic traits. It has 4 arguements, respectively are:
+
+~~~shell
+--input_file: should be a str. The absolute path of the input file,
+              should be a .csv file, containing a matirx of normalized data.
+              Each line represents a patient while each column represent a type of bacteria.
+              Note that the last line is phylum information of all measured bacterias.
+
+--metabolites_file: should be a str. The absolute path of the metabolites file,
+              should be a .csv file, containing a matirx of normalized data.
+              Each line represents a type of bacteria while each column represent a kind of metabolite. 
+              IF you DO NOT have your customized one, please use the file provided in this repo.
+
+--isize: should be an int. Default value is set to 60, determined by
+              hyper-parameter searching via a couple cross validation,
+              This arguement represents the image size of transformed input data.
+
+--check_feature_importance: should be a bool. Default is set as Ture.
+              This is the switch to draw the saliency plot.
+              Important for microbial characteristic trait analysis.
+              If True, would produce a .png file like following.
+~~~
+![](https://github.com/Wenze18/IMPACT/blob/main/IMPACT.png)
 
 
 ## Citation
