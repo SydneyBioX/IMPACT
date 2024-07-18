@@ -73,6 +73,24 @@ Function train(input_file, metabolites_file, isize, check_feature_importance) co
 ![](https://github.com/Wenze18/IMPACT/blob/main/saliency.png)
 
 
+Function predict(fname,input_file, isize) could help user to predict patient phenotype via a pre-trained Prediction Model (details could be found in the description above). It has 3 arguements, respectively are:
+
+~~~
+--fname: should be a str. Default is set as "model.pth".
+              This is the name of the pre-trained model.
+              Please find the .pth file after your training by Function "train()".
+              Use the name of this file.
+              
+--input_file: should be a str. The absolute path of the input file,
+              should be a .csv file, containing a matirx of normalized data.
+              Each line represents a patient while each column represent a type of bacteria.
+              Note that the last line is phylum information of all measured bacterias.
+
+--isize: should be an int. Default value is set to 60, determined by
+              hyper-parameter searching via a couple cross validation,
+              This arguement represents the image size of transformed input data.
+~~~
+
 ## Citation
 
 If you find our codes useful, please consider citing our work:
