@@ -50,7 +50,7 @@ There are two main functions implemented within IMPACT, "train()" and "predict()
 
 Function train(input_file, metabolites_file, isize, check_feature_importance) could help user to train a Phenotype Prediction Model and analysis the data via microbial characteristic traits. It has 4 arguements, respectively are:
 
-~~~shell
+~~~
 --input_file: should be a str. The absolute path of the input file,
               should be a .csv file, containing a matirx of normalized data.
               Each line represents a patient while each column represent a type of bacteria.
@@ -70,7 +70,7 @@ Function train(input_file, metabolites_file, isize, check_feature_importance) co
               Important for microbial characteristic trait analysis.
               If True, would produce a .png file like following.
 ~~~
-![](https://github.com/Wenze18/IMPACT/blob/main/IMPACT.png)
+![](https://github.com/Wenze18/IMPACT/blob/main/saliency.png)
 
 
 ## Citation
